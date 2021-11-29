@@ -3,7 +3,7 @@
 
 const RAVANA = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
-const Config = require('../config');
+const Config = require('../../config');
 const chalk = require('chalk');
 const axios = require('axios');
 const fs = require('fs');
