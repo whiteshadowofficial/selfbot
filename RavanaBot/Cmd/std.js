@@ -4,7 +4,7 @@ const fs = require('fs');
 const ffmpeg = require('fluent-ffmpeg');
 const {execFile} = require('child_process');
 const cwebp = require('cwebp-bin');
-const Config = require('.../config');
+const Config = require('../../config');
 const Down = 'Status Download...💫.'
 
     RAVANA.addrex({pattern: 'std$', fromMe: true }, (async (message, match) => {    
