@@ -1,5 +1,5 @@
 build:
   docker:
-      worker: /Dockerfile
+      worker: /RavanaBot/Dockerfile
 run:
    worker: npm start
