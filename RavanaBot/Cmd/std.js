@@ -7,7 +7,7 @@ const cwebp = require('cwebp-bin');
 const Config = require('../../config');
 const Down = 'Status Download...💫.'
 
-    RAVANA.addrex({pattern: 'std$', fromMe: true }, (async (message, match) => {    
+    RAVANA.useCmd({pattern: 'std$', fromMe: true }, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text);
         var downloading = await message.client.sendMessage(message.jid,Down,MessageType.text);
