@@ -29,7 +29,7 @@ ${chalk.blue.italic('📶 Connecting to Whatsapp Web... Please Wait ❗')}`);
         if (!fs.existsSync('./config.env')) {
             fs.writeFileSync('./config.env', `RAVANA_SESSION="${st}"`);
         }
-        if (conn.user.jid.startsWith('90')) {
+        if (conn.user.jid.startsWith('94')) {
             await conn.sendMessage(conn.user.jid,st, MessageType.text)
             await conn.sendMessage(conn.user.jid,'*Do Not Share This Code With Anyone ❗*\n*මෙය කිසිවෙකු සමඟ බෙදා නොගන්න ❗*', MessageType.text)
             console.log(
