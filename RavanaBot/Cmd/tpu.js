@@ -14,7 +14,7 @@ const {execFile} = require('child_process');
 
 
 
-RAVANA.addrex({pattern: 'tpu ?(.*)', fromMe: true,  deleteCommand: true,  desc: 'short cut'}, (async (message, match) => {    
+RAVANA.useCmd({pattern: 'tpu ?(.*)', fromMe: true,  deleteCommand: true,  desc: 'short cut'}, (async (message, match) => {    
 
     if (!message.reply_message) return await message.client.sendMessage(message.jid, need, MessageType.text);
 
@@ -45,7 +45,7 @@ if (Config.WORKTYPE == 'public') {
     
     
     
-    RAVANA.addrex({pattern: 'tpu ?(.*)', fromMe: false,  deleteCommand: true,  desc: 'short cut'}, (async (message, match) => {    
+    RAVANA.useCmd({pattern: 'tpu ?(.*)', fromMe: false,  deleteCommand: true,  desc: 'short cut'}, (async (message, match) => {    
 
     if (!message.reply_message) return await message.client.sendMessage(message.jid, need, MessageType.text);
 
